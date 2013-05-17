@@ -13,6 +13,9 @@ To help you in managing your Ruby environemnt, we will introduce you to _rbenv_,
 
 My instructions below assume that you are on Mac OS X. If you are running on Linux or Windows, you will have to adapt them as required.
 
+### Clone me!
+First off, clone this repo and cd to it. This will get you setup and ready to roll.
+
 ### brew
 As part of this process, you will need to install various packages that will need to be built from source. To ease that process for you, I recommend that you install the Mac OS X package manager, [_HomeBrew_](http://mxcl.github.io/homebrew/).
 
@@ -56,7 +59,19 @@ Now we need to add a few 'accessories' to rbenv to make it easier to use:
 
 And then let's get our first Ruby installed:
 ````
-   $ 
+    $ rbenv install 1.9.3-p194
+    $ cd ..
+       - We need to move into and out of the directory to get some needed rbenv and  rbenv-gemset functionality working.
+    $ cd -
+        - This takes you back to your previous working directory
+````
+Amd start installing our needed Ruby gems:
+````
+    $ gem update --system
+        - Make sure we have the latest and greatest Ruby gems installed
+    $ gem install rake bundler
+````
+Whew! You still with us? Hope so, because we are now ready to rock and start learning about rake!
     
 
     
