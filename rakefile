@@ -1,0 +1,19 @@
+# A simple, 'Hello World' rake file.
+#
+desc 'Default Task'
+task :default => :conversation
+
+desc 'A conversation with Rake...'
+task :conversation
+task :conversation => [:hello]
+task :conversation => [:goodbye]
+
+desc 'Rake says Hello...'
+task :hello do
+  puts 'Hello from Rake!'
+end
+
+desc 'Rake says Goodbye...'
+task :goodbye do
+  puts 'Goodbye for now!'
+end
